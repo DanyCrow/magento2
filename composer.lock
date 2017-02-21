@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0299a7d8aa23b3e1508d08ce2f45a566",
+    "hash": "d0504875bc58abe8efa091aecdf489aa",
+    "content-hash": "8a09af06b580c3ae45403c467d323627",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -51,7 +52,7 @@
                 }
             ],
             "description": "Braintree PHP Client Library",
-            "time": "2015-11-19T19:14:47+00:00"
+            "time": "2015-11-19 19:14:47"
         },
         {
             "name": "colinmollenhour/cache-backend-file",
@@ -87,7 +88,7 @@
             ],
             "description": "The stock Zend_Cache_Backend_File backend has extremely poor performance for cleaning by tags making it become unusable as the number of cached items increases. This backend makes many changes resulting in a huge performance boost, especially for tag cleaning.",
             "homepage": "https://github.com/colinmollenhour/Cm_Cache_Backend_File",
-            "time": "2016-05-02T16:24:47+00:00"
+            "time": "2016-05-02 16:24:47"
         },
         {
             "name": "colinmollenhour/cache-backend-redis",
@@ -123,7 +124,7 @@
             ],
             "description": "Zend_Cache backend using Redis with full support for tags.",
             "homepage": "https://github.com/colinmollenhour/Cm_Cache_Backend_Redis",
-            "time": "2016-05-02T16:23:36+00:00"
+            "time": "2016-05-02 16:23:36"
         },
         {
             "name": "colinmollenhour/credis",
@@ -162,7 +163,7 @@
             ],
             "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
             "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2015-11-28T01:20:04+00:00"
+            "time": "2015-11-28 01:20:04"
         },
         {
             "name": "colinmollenhour/php-redis-session-abstract",
@@ -200,7 +201,7 @@
             ],
             "description": "A Redis-based session handler with optimistic locking",
             "homepage": "https://github.com/colinmollenhour/php-redis-session-abstract",
-            "time": "2016-08-04T18:05:51+00:00"
+            "time": "2016-08-04 18:05:51"
         },
         {
             "name": "composer/composer",
@@ -275,7 +276,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-03-03T15:15:10+00:00"
+            "time": "2016-03-03 15:15:10"
         },
         {
             "name": "composer/semver",
@@ -337,7 +338,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30T16:08:34+00:00"
+            "time": "2016-08-30 16:08:34"
         },
         {
             "name": "composer/spdx-licenses",
@@ -398,7 +399,7 @@
                 "spdx",
                 "validator"
             ],
-            "time": "2016-09-28T07:17:45+00:00"
+            "time": "2016-09-28 07:17:45"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -464,7 +465,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-01-25T15:43:01+00:00"
+            "time": "2016-01-25 15:43:01"
         },
         {
             "name": "league/climate",
@@ -513,7 +514,7 @@
                 "php",
                 "terminal"
             ],
-            "time": "2015-01-18T14:31:58+00:00"
+            "time": "2015-01-18 14:31:58"
         },
         {
             "name": "magento/composer",
@@ -833,7 +834,7 @@
                 "composer-installer",
                 "magento"
             ],
-            "time": "2016-10-06T16:05:07+00:00"
+            "time": "2016-10-06 16:05:07"
         },
         {
             "name": "magento/magento2-base",
@@ -1718,6 +1719,36 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-bundle-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-bundle-sample-data/magento-module-bundle-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "52ea41ee8c98f5e4b000f117d090d47e900d805e"
+            },
+            "require": {
+                "magento/module-bundle": "100.1.*",
+                "magento/module-catalog-sample-data": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\BundleSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-cache-invalidate",
             "version": "100.1.2",
             "dist": {
@@ -1982,6 +2013,63 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-catalog-rule-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-catalog-rule-sample-data/magento-module-catalog-rule-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "b5290f3e6134a29e0d778ba0cfe6e5a32d6702e9"
+            },
+            "require": {
+                "magento/module-catalog-rule": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogRuleSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-catalog-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-catalog-sample-data/magento-module-catalog-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "1776581899cede9012b4110ef919c80015d26d90"
+            },
+            "require": {
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-catalog-search",
             "version": "100.1.3",
             "dist": {
@@ -2212,6 +2300,37 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-cms-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-cms-sample-data/magento-module-cms-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "99c104c9370ece043e1cc7e9f35bbc10a3d85e3d"
+            },
+            "require": {
+                "magento/module-cms": "101.0.*",
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-theme-sample-data": "100.1.*",
+                "magento/sample-data-media": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CmsSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-cms-url-rewrite",
             "version": "100.1.1",
             "dist": {
@@ -2349,6 +2468,36 @@
                 ],
                 "psr-4": {
                     "Magento\\ConfigurableProduct\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-configurable-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-configurable-sample-data/magento-module-configurable-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "02f11db3a14203bca7979682cbf3517b8d195cf7"
+            },
+            "require": {
+                "magento/module-configurable-product": "100.1.*",
+                "magento/module-product-links-sample-data": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ConfigurableSampleData\\": ""
                 }
             },
             "license": [
@@ -2572,6 +2721,34 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-customer-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-customer-sample-data/magento-module-customer-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "3cadc90b51a45f52816347af4c2bb3e47985e3d2"
+            },
+            "require": {
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CustomerSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-deploy",
             "version": "100.1.4",
             "dist": {
@@ -2778,6 +2955,37 @@
                 ],
                 "psr-4": {
                     "Magento\\DownloadableImportExport\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-downloadable-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-downloadable-sample-data/magento-module-downloadable-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "f3977cbfad9e6662a8a8efa88f9a2422e06ddc93"
+            },
+            "require": {
+                "magento/module-catalog-sample-data": "100.1.*",
+                "magento/module-downloadable": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "magento/sample-data-media": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\DownloadableSampleData\\": ""
                 }
             },
             "license": [
@@ -3129,6 +3337,36 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-grouped-product-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-grouped-product-sample-data/magento-module-grouped-product-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "8e8169f3c99e3859aabe4aed45d2f6720ff84f41"
+            },
+            "require": {
+                "magento/module-catalog-sample-data": "100.1.*",
+                "magento/module-grouped-product": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GroupedProductSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-import-export",
             "version": "100.1.2",
             "dist": {
@@ -3353,6 +3591,35 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-msrp-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-msrp-sample-data/magento-module-msrp-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "ec3ef3814c710302f1a16ed4088edc432b7d9d1c"
+            },
+            "require": {
+                "magento/module-msrp": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\MsrpSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-multishipping",
             "version": "100.1.1",
             "dist": {
@@ -3532,6 +3799,36 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-offline-shipping-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-offline-shipping-sample-data/magento-module-offline-shipping-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "7d2336a9903ce0e9a99f1922870abdeaebe10f39"
+            },
+            "require": {
+                "magento/module-directory": "100.1.*",
+                "magento/module-offline-shipping": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\OfflineShippingSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-page-cache",
             "version": "100.1.2",
             "dist": {
@@ -3700,6 +3997,35 @@
                 ],
                 "psr-4": {
                     "Magento\\ProductAlert\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-product-links-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-product-links-sample-data/magento-module-product-links-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "c1fec0ea823a6f99324a5337a52b60b7809cbde0"
+            },
+            "require": {
+                "magento/module-catalog-sample-data": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ProductLinksSampleData\\": ""
                 }
             },
             "license": [
@@ -3899,6 +4225,35 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-review-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-review-sample-data/magento-module-review-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "0d8f4648977f5ad02167c67b18edf5479e55de84"
+            },
+            "require": {
+                "magento/module-review": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ReviewSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-rss",
             "version": "100.1.1",
             "dist": {
@@ -4087,6 +4442,67 @@
                 ],
                 "psr-4": {
                     "Magento\\SalesRule\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-sales-rule-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-sales-rule-sample-data/magento-module-sales-rule-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "17522631c6f77bcbfc6ab65bbade51581161499d"
+            },
+            "require": {
+                "magento/module-catalog-rule-sample-data": "100.1.*",
+                "magento/module-eav": "100.1.*",
+                "magento/module-sales-rule": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SalesRuleSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-sales-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-sales-sample-data/magento-module-sales-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "3d005a3b231d4a73da0599d1faf403bc1158c875"
+            },
+            "require": {
+                "magento/module-configurable-sample-data": "100.1.*",
+                "magento/module-sales": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SalesSampleData\\": ""
                 }
             },
             "license": [
@@ -4468,6 +4884,36 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-swatches-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-swatches-sample-data/magento-module-swatches-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "4581679828180e76051bad5246bd2ceaceee8c6c"
+            },
+            "require": {
+                "magento/module-eav": "100.1.*",
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-swatches": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SwatchesSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-tax",
             "version": "100.1.1",
             "dist": {
@@ -4544,6 +4990,35 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-tax-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-tax-sample-data/magento-module-tax-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "0d585ae305efbbf010d04ede0da919a78ddd0a60"
+            },
+            "require": {
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-tax": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\TaxSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-theme",
             "version": "100.1.3",
             "dist": {
@@ -4578,6 +5053,35 @@
                 ],
                 "psr-4": {
                     "Magento\\Theme\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-theme-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-theme-sample-data/magento-module-theme-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "60079ee512a0ea1016c0e2ae2780d5201370dbaf"
+            },
+            "require": {
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-theme": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ThemeSampleData\\": ""
                 }
             },
             "license": [
@@ -5028,6 +5532,37 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-widget-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-widget-sample-data/magento-module-widget-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "53bd5f6441fd72cf25d27d7c454e619f2f928979"
+            },
+            "require": {
+                "magento/module-cms": "101.0.*",
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-theme": "100.1.*",
+                "magento/module-widget": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\WidgetSampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-wishlist",
             "version": "100.1.3",
             "dist": {
@@ -5065,6 +5600,35 @@
                 ],
                 "psr-4": {
                     "Magento\\Wishlist\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-wishlist-sample-data",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-wishlist-sample-data/magento-module-wishlist-sample-data-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "91a8118d42e400249ecf5e60283e374e88d99db9"
+            },
+            "require": {
+                "magento/module-sample-data": "100.1.*",
+                "magento/module-wishlist": "100.1.*",
+                "php": "~5.6.0|7.0.2|~7.0.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\WishlistSampleData\\": ""
                 }
             },
             "license": [
@@ -5264,6 +5828,26 @@
             "description": "eCommerce Platform for Growth (Community Edition)"
         },
         {
+            "name": "magento/sample-data-media",
+            "version": "100.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/sample-data-media/magento-sample-data-media-100.1.0.0.zip",
+                "reference": null,
+                "shasum": "345fa8808d82050bcd9026bfdb31658cd6d9c29b"
+            },
+            "type": "magento2-component",
+            "extra": {
+                "map": [
+                    [
+                        "*",
+                        "pub/media"
+                    ]
+                ]
+            },
+            "description": "Sample Data media files"
+        },
+        {
             "name": "magento/theme-adminhtml-backend",
             "version": "100.1.1",
             "dist": {
@@ -5384,7 +5968,7 @@
                 "ZF1",
                 "framework"
             ],
-            "time": "2017-01-17T16:40:08+00:00"
+            "time": "2017-01-17 16:40:08"
         },
         {
             "name": "monolog/monolog",
@@ -5460,7 +6044,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-09T17:44:44+00:00"
+            "time": "2015-08-09 17:44:44"
         },
         {
             "name": "oyejorge/less.php",
@@ -5522,7 +6106,7 @@
                 "php",
                 "stylesheet"
             ],
-            "time": "2015-12-30T05:47:36+00:00"
+            "time": "2015-12-30 05:47:36"
         },
         {
             "name": "pelago/emogrifier",
@@ -5578,7 +6162,7 @@
             ],
             "description": "Converts CSS styles into inline style attributes in your HTML code",
             "homepage": "http://www.pelagodesign.com/sidecar/emogrifier/",
-            "time": "2015-05-15T11:37:51+00:00"
+            "time": "2015-05-15 11:37:51"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -5670,7 +6254,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2016-10-04T00:57:04+00:00"
+            "time": "2016-10-04 00:57:04"
         },
         {
             "name": "psr/log",
@@ -5717,7 +6301,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "seld/cli-prompt",
@@ -5765,7 +6349,7 @@
                 "input",
                 "prompt"
             ],
-            "time": "2016-04-18T09:31:41+00:00"
+            "time": "2016-04-18 09:31:41"
         },
         {
             "name": "seld/jsonlint",
@@ -5811,7 +6395,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2016-11-14T17:59:58+00:00"
+            "time": "2016-11-14 17:59:58"
         },
         {
             "name": "seld/phar-utils",
@@ -5855,7 +6439,7 @@
             "keywords": [
                 "phra"
             ],
-            "time": "2015-10-13T18:44:15+00:00"
+            "time": "2015-10-13 18:44:15"
         },
         {
             "name": "sjparkinson/static-review",
@@ -5908,7 +6492,7 @@
                 }
             ],
             "description": "An extendable framework for version control hooks.",
-            "time": "2014-09-22T08:40:36+00:00"
+            "time": "2014-09-22 08:40:36"
         },
         {
             "name": "symfony/console",
@@ -5966,7 +6550,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-26T09:08:40+00:00"
+            "time": "2015-07-26 09:08:40"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -6026,7 +6610,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:30:24+00:00"
+            "time": "2017-01-02 20:30:24"
         },
         {
             "name": "symfony/filesystem",
@@ -6075,7 +6659,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-08T20:43:03+00:00"
+            "time": "2017-01-08 20:43:03"
         },
         {
             "name": "symfony/finder",
@@ -6124,7 +6708,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/process",
@@ -6173,7 +6757,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-03T12:08:06+00:00"
+            "time": "2017-02-03 12:08:06"
         },
         {
             "name": "tedivm/jshrink",
@@ -6219,7 +6803,7 @@
                 "javascript",
                 "minifier"
             ],
-            "time": "2014-11-11T03:54:14+00:00"
+            "time": "2014-11-11 03:54:14"
         },
         {
             "name": "tubalmartin/cssmin",
@@ -6263,7 +6847,7 @@
                 "minify",
                 "yui"
             ],
-            "time": "2014-09-22T08:08:50+00:00"
+            "time": "2014-09-22 08:08:50"
         },
         {
             "name": "zendframework/zend-code",
@@ -6316,7 +6900,7 @@
                 "code",
                 "zf2"
             ],
-            "time": "2015-05-11T16:17:05+00:00"
+            "time": "2015-05-11 16:17:05"
         },
         {
             "name": "zendframework/zend-config",
@@ -6373,7 +6957,7 @@
                 "config",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-console",
@@ -6423,7 +7007,7 @@
                 "console",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-crypt",
@@ -6475,7 +7059,7 @@
                 "crypt",
                 "zf2"
             ],
-            "time": "2015-11-23T16:33:27+00:00"
+            "time": "2015-11-23 16:33:27"
         },
         {
             "name": "zendframework/zend-di",
@@ -6526,7 +7110,7 @@
                 "di",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -6571,7 +7155,7 @@
                 "escaper",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-eventmanager",
@@ -6617,7 +7201,7 @@
                 "eventmanager",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-filter",
@@ -6673,7 +7257,7 @@
                 "filter",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-form",
@@ -6744,7 +7328,7 @@
                 "form",
                 "zf2"
             ],
-            "time": "2015-09-09T19:11:05+00:00"
+            "time": "2015-09-09 19:11:05"
         },
         {
             "name": "zendframework/zend-http",
@@ -6795,7 +7379,7 @@
                 "http",
                 "zf2"
             ],
-            "time": "2015-09-14T16:11:20+00:00"
+            "time": "2015-09-14 16:11:20"
         },
         {
             "name": "zendframework/zend-i18n",
@@ -6859,7 +7443,7 @@
                 "i18n",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-inputfilter",
@@ -6910,7 +7494,7 @@
                 "inputfilter",
                 "zf2"
             ],
-            "time": "2015-09-09T15:44:54+00:00"
+            "time": "2015-09-09 15:44:54"
         },
         {
             "name": "zendframework/zend-json",
@@ -6964,7 +7548,7 @@
                 "json",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-loader",
@@ -7009,7 +7593,7 @@
                 "loader",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-log",
@@ -7071,7 +7655,7 @@
                 "logging",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-math",
@@ -7122,7 +7706,7 @@
                 "math",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-modulemanager",
@@ -7180,7 +7764,7 @@
                 "modulemanager",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-mvc",
@@ -7268,7 +7852,7 @@
                 "mvc",
                 "zf2"
             ],
-            "time": "2015-09-14T16:32:50+00:00"
+            "time": "2015-09-14 16:32:50"
         },
         {
             "name": "zendframework/zend-serializer",
@@ -7321,7 +7905,7 @@
                 "serializer",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-server",
@@ -7368,7 +7952,7 @@
                 "server",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-servicemanager",
@@ -7418,7 +8002,7 @@
                 "servicemanager",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-soap",
@@ -7470,7 +8054,7 @@
                 "soap",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -7525,7 +8109,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2015-07-21T13:55:46+00:00"
+            "time": "2015-07-21 13:55:46"
         },
         {
             "name": "zendframework/zend-text",
@@ -7572,7 +8156,7 @@
                 "text",
                 "zf2"
             ],
-            "time": "2015-05-07T14:55:31+00:00"
+            "time": "2015-05-07 14:55:31"
         },
         {
             "name": "zendframework/zend-uri",
@@ -7620,7 +8204,7 @@
                 "uri",
                 "zf2"
             ],
-            "time": "2015-09-14T16:17:10+00:00"
+            "time": "2015-09-14 16:17:10"
         },
         {
             "name": "zendframework/zend-validator",
@@ -7685,7 +8269,7 @@
                 "validator",
                 "zf2"
             ],
-            "time": "2015-09-08T21:04:17+00:00"
+            "time": "2015-09-08 21:04:17"
         },
         {
             "name": "zendframework/zend-view",
@@ -7762,7 +8346,7 @@
                 "view",
                 "zf2"
             ],
-            "time": "2015-06-16T15:22:37+00:00"
+            "time": "2015-06-16 15:22:37"
         }
     ],
     "packages-dev": [
@@ -7818,7 +8402,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14T21:17:01+00:00"
+            "time": "2015-06-14 21:17:01"
         },
         {
             "name": "fabpot/php-cs-fixer",
@@ -7877,7 +8461,7 @@
             ],
             "description": "A tool to automatically fix PHP code style",
             "abandoned": "friendsofphp/php-cs-fixer",
-            "time": "2016-12-01T00:05:05+00:00"
+            "time": "2016-12-01 00:05:05"
         },
         {
             "name": "lusitanian/oauth",
@@ -7944,7 +8528,7 @@
                 "oauth",
                 "security"
             ],
-            "time": "2015-10-07T00:20:04+00:00"
+            "time": "2015-10-07 00:20:04"
         },
         {
             "name": "pdepend/pdepend",
@@ -7984,7 +8568,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Official version of pdepend to be handled with Composer",
-            "time": "2015-10-16T08:49:58+00:00"
+            "time": "2015-10-16 08:49:58"
         },
         {
             "name": "phpmd/phpmd",
@@ -8049,7 +8633,7 @@
                 "phpmd",
                 "pmd"
             ],
-            "time": "2016-11-23T20:33:32+00:00"
+            "time": "2016-11-23 20:33:32"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8111,7 +8695,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-06T15:47:00+00:00"
+            "time": "2015-10-06 15:47:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -8156,7 +8740,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2013-10-10T15:34:57+00:00"
+            "time": "2013-10-10 15:34:57"
         },
         {
             "name": "phpunit/php-text-template",
@@ -8197,7 +8781,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21T13:50:34+00:00"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
@@ -8241,7 +8825,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12T18:03:57+00:00"
+            "time": "2016-05-12 18:03:57"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -8290,7 +8874,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2016-11-15T14:06:22+00:00"
+            "time": "2016-11-15 14:06:22"
         },
         {
             "name": "phpunit/phpunit",
@@ -8364,7 +8948,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-05-02T07:13:40+00:00"
+            "time": "2014-05-02 07:13:40"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -8420,7 +9004,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-10-02T06:51:40+00:00"
+            "time": "2015-10-02 06:51:40"
         },
         {
             "name": "sebastian/comparator",
@@ -8484,7 +9068,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-01-29T09:50:25+00:00"
+            "time": "2017-01-29 09:50:25"
         },
         {
             "name": "sebastian/diff",
@@ -8536,7 +9120,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08T07:14:41+00:00"
+            "time": "2015-12-08 07:14:41"
         },
         {
             "name": "sebastian/environment",
@@ -8586,7 +9170,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-08-18T05:49:44+00:00"
+            "time": "2016-08-18 05:49:44"
         },
         {
             "name": "sebastian/exporter",
@@ -8653,7 +9237,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2016-06-17T09:04:28+00:00"
+            "time": "2016-06-17 09:04:28"
         },
         {
             "name": "sebastian/finder-facade",
@@ -8692,7 +9276,7 @@
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
             "homepage": "https://github.com/sebastianbergmann/finder-facade",
-            "time": "2016-02-17T07:02:23+00:00"
+            "time": "2016-02-17 07:02:23"
         },
         {
             "name": "sebastian/phpcpd",
@@ -8743,7 +9327,7 @@
             ],
             "description": "Copy/Paste Detector (CPD) for PHP code.",
             "homepage": "https://github.com/sebastianbergmann/phpcpd",
-            "time": "2013-11-08T09:05:42+00:00"
+            "time": "2013-11-08 09:05:42"
         },
         {
             "name": "sebastian/recursion-context",
@@ -8796,7 +9380,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2015-11-11T19:50:13+00:00"
+            "time": "2015-11-11 19:50:13"
         },
         {
             "name": "sebastian/version",
@@ -8831,7 +9415,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-06-21T13:59:46+00:00"
+            "time": "2015-06-21 13:59:46"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -8906,7 +9490,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2014-05-01T03:07:07+00:00"
+            "time": "2014-05-01 03:07:07"
         },
         {
             "name": "symfony/config",
@@ -8962,7 +9546,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-05T10:11:19+00:00"
+            "time": "2017-02-05 10:11:19"
         },
         {
             "name": "symfony/dependency-injection",
@@ -9025,7 +9609,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-27T23:54:58+00:00"
+            "time": "2017-01-27 23:54:58"
         },
         {
             "name": "symfony/stopwatch",
@@ -9074,7 +9658,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/yaml",
@@ -9123,7 +9707,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-21T16:40:50+00:00"
+            "time": "2017-01-21 16:40:50"
         },
         {
             "name": "theseer/fdomdocument",
@@ -9163,7 +9747,7 @@
             ],
             "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
             "homepage": "https://github.com/theseer/fDOMDocument",
-            "time": "2015-05-27T22:58:02+00:00"
+            "time": "2015-05-27 22:58:02"
         }
     ],
     "aliases": [],
