@@ -1,0 +1,3 @@
+name=magento2
+template=jessie-php-percona
+mount=.:/var/www/magento2
