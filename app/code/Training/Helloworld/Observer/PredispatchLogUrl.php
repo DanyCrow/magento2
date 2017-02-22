@@ -33,8 +33,8 @@ class PredispatchLogUrl implements ObserverInterface
     {
         $request = $observer->getEvent()->getRequest()->getPathInfo();
 
-        $this->logger->debug(__METHOD__);
-        $this->logger->debug($request);
+        //$this->logger->debug(__METHOD__);
+        //$this->logger->debug($request);
 
         return $this;
     }
