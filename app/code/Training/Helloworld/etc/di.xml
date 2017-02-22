@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- PLUGIN -->
+    <type name="Magento\Customer\Model\Data\Customer">
+        <plugin
+                name="training_hello_world_plugin_model_data_customer"
+                type="Training\Helloworld\Plugin\Model\Data\Customer"
+                sortOrder="10"
+                disabled="false"
+        />
+    </type>
+</config>
