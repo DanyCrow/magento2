@@ -2,6 +2,7 @@
 namespace Training\Seller\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
+use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Training\Seller\Api\Data\SellerInterface;
@@ -55,6 +56,7 @@ interface SellerRepositoryInterface
      * @return bool
      *
      * @throws NoSuchEntityException
+     * @throws CouldNotDeleteException
      */
     public function deleteById($sellerId);
 
@@ -65,6 +67,7 @@ interface SellerRepositoryInterface
      * @return bool
      *
      * @throws NoSuchEntityException
+     * @throws CouldNotDeleteException
      */
     public function deleteByIdentifier($identifier);
 
