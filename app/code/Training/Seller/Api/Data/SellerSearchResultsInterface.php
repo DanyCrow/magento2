@@ -13,14 +13,14 @@ interface SellerSearchResultsInterface extends SearchResultsInterface
     /**
      * Get seller list
      *
-     * @return SellerInterface[]
+     * @return \Training\Seller\Api\Data\SellerInterface[]
      */
     public function getItems();
 
     /**
      * Set seller list
      *
-     * @param SellerInterface[] $items
+     * @param \Training\Seller\Api\Data\SellerInterface[] $items
      * @return $this
      */
     public function setItems(array $items);

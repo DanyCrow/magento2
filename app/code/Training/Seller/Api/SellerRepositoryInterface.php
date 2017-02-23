@@ -1,12 +1,9 @@
 <?php
 namespace Training\Seller\Api;
 
-use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
-use Training\Seller\Api\Data\SellerInterface;
-use Training\Seller\Api\Data\SellerSearchResultsInterface;
 
 /**
  * Seller CRUD interface.
@@ -18,57 +15,57 @@ interface SellerRepositoryInterface
     /**
      * Retrieve seller
      *
-     * @param int $sellerId
-     * @return SellerInterface
+     * @param int $objectId
+     * @return \Training\Seller\Api\Data\SellerInterface
      */
-    public function getById($sellerId);
+    public function getById($objectId);
 
     /**
      * Retrieve seller
      *
-     * @param $identifier
-     * @return SellerInterface
+     * @param string $objectIdentifier
+     * @return \Training\Seller\Api\Data\SellerInterface
      */
-    public function getByIdentifier($identifier);
+    public function getByIdentifier($objectIdentifier);
 
     /**
      * Retrieve seller list
      *
-     * @param SearchCriteriaInterface $searchCriteria
-     * @return SellerSearchResultsInterface
+     * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
+     * @return \Training\Seller\Api\Data\SellerSearchResultsInterface
      */
-    public function getList(SearchCriteriaInterface $searchCriteria);
+    public function getList(\Magento\Framework\Api\SearchCriteriaInterface $searchCriteria);
 
     /**
      * Save seller
      *
-     * @param SellerInterface $seller
-     * @return SellerInterface
+     * @param \Training\Seller\Api\Data\SellerInterface $object
+     * @return \Training\Seller\Api\Data\SellerInterface
      *
      * @throws CouldNotSaveException
      */
-    public function save(SellerInterface $seller);
+    public function save(\Training\Seller\Api\Data\SellerInterface $object);
 
     /**
      * Delete seller
      *
-     * @param int $sellerId
+     * @param int $objectId
      * @return bool
      *
      * @throws NoSuchEntityException
      * @throws CouldNotDeleteException
      */
-    public function deleteById($sellerId);
+    public function deleteById($objectId);
 
     /**
      * Delete seller
      *
-     * @param string $identifier
+     * @param string $objectIdentifier
      * @return bool
      *
      * @throws NoSuchEntityException
      * @throws CouldNotDeleteException
      */
-    public function deleteByIdentifier($identifier);
+    public function deleteByIdentifier($objectIdentifier);
 
 }

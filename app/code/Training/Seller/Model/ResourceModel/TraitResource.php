@@ -111,7 +111,7 @@ trait TraitResource
         if (is_null($field)) {
             $field = $entityMetadata->getIdentifierField();
         }
-        $entityId = $value;
+        $objectId = $value;
 
         if ($field != $entityMetadata->getIdentifierField()) {
             $select = $this->getLoadSelect($field, $value);
@@ -119,9 +119,9 @@ trait TraitResource
                 ->columns($this->getMainTable() . '.' . $entityMetadata->getIdentifierField())
                 ->limit(1);
             $result = $this->getConnection()->fetchCol($select);
-            $entityId = count($result) ? $result[0] : false;
+            $objectId = count($result) ? $result[0] : false;
         }
-        return $entityId;
+        return $objectId;
     }
 
     /**

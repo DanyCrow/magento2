@@ -3,13 +3,11 @@ namespace Training\Seller\Model\Repository;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Api\SortOrder;
-use Magento\Framework\Data\Collection;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Framework\Data\Collection\AbstractDb as AbstractCollection;
-use Magento\Framework\Data\Collection\EntityFactoryInterface;
 
 /**
  * AbstractRepository
@@ -87,22 +85,22 @@ abstract class AbstractRepository
     /**
      * Get entity by id
      *
-     * @param $entityId
+     * @param $objectId
      * @return \Magento\Framework\Model\AbstractModel
      * @throws NoSuchEntityException
      */
-    protected function getEntityById($entityId)
+    protected function getEntityById($objectId)
     {
-        if (!isset($this->objectRepoById[$entityId])) {
+        if (!isset($this->objectRepoById[$objectId])) {
 
             $object = $this->objectFactory->create();
-            $this->objectResource->load($object, $entityId);
+            $this->objectResource->load($object, $objectId);
 
             if (!$object->getId()) {
                 // Object does not exists
-                throw NoSuchEntityException::singleField('objectId', $entityId);
+                throw NoSuchEntityException::singleField('objectId', $objectId);
             }
-            $this->objectRepoById[$entityId] = $object;
+            $this->objectRepoById[$objectId] = $object;
 
             // Remember that some object do not have identifier (eg.: categories)
             if (!is_null($this->identifierFieldName)) {
@@ -110,7 +108,7 @@ abstract class AbstractRepository
             }
         }
 
-        return $this->objectRepoById[$entityId];
+        return $this->objectRepoById[$objectId];
     }
 
     /**
@@ -135,7 +133,7 @@ abstract class AbstractRepository
                 // Object does not exists
                 throw new NoSuchEntityException(__('Requested entity is not found'));
             }
-            $this->objectRepoByCode[$this->identifierFieldName] = $object;
+            $this->objectRepoByCode[$identifier] = $object;
             $this->objectRepoById[$object->getId()] = $object;
         }
 
