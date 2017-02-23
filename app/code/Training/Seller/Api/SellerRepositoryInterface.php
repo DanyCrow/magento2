@@ -1,11 +1,11 @@
 <?php
 namespace Training\Seller\Api;
 
-use Magento\Framework\Api\Search\SearchResult;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Training\Seller\Api\Data\SellerInterface;
+use Training\Seller\Api\Data\SellerSearchResultsInterface;
 
 /**
  * Seller CRUD interface.
@@ -34,7 +34,7 @@ interface SellerRepositoryInterface
      * Retrieve seller list
      *
      * @param SearchCriteriaInterface $searchCriteria
-     * @return SearchResult
+     * @return SellerSearchResultsInterface
      */
     public function getList(SearchCriteriaInterface $searchCriteria);
 
