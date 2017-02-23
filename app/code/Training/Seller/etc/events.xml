@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <!-- Note: we do not use legacy anymore because we want to be M2.2 compliant -->
+    <event name="training_seller_api_data_sellerinterface_save_before">
+        <observer
+            name="training_seller_before_save"
+            instance="Magento\Framework\EntityManager\Observer\BeforeEntitySave"
+        />
+    </event>
+</config>
