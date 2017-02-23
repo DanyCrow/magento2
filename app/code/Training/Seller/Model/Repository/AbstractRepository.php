@@ -100,7 +100,7 @@ abstract class AbstractRepository
 
             if (!$object->getId()) {
                 // Object does not exists
-                throw new NoSuchEntityException(__('Requested entity is not found'));
+                throw NoSuchEntityException::singleField('objectId', $entityId);
             }
             $this->objectRepoById[$entityId] = $object;
 
