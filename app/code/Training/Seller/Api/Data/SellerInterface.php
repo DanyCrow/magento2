@@ -2,7 +2,7 @@
 namespace Training\Seller\Api\Data;
 
 /**
- * Seller seller interface.
+ * Seller data interface.
  * @api
  */
 interface SellerInterface
