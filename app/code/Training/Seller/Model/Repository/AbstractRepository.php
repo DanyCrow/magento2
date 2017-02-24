@@ -299,7 +299,9 @@ abstract class AbstractRepository
                 $isAscending = ($sortOrder->getDirection() == SortOrder::SORT_ASC);
                 $collection->addOrder(
                     $sortOrder->getField(),
-                    $isAscending ? Collection::SORT_ORDER_ASC : Collection::SORT_ORDER_DESC
+                    $isAscending ? 'ASC' : 'DESC'
+                    // Note: better solution here:
+                    //$isAscending ? Collection::SORT_ORDER_ASC : Collection::SORT_ORDER_DESC
                 );
             }
         }

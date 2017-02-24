@@ -1,6 +1,8 @@
 <?php
 namespace Training\Seller\Controller\Seller;
 
+use Magento\Framework\Api\FilterBuilder;
+use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\Api\SearchCriteriaBuilder;
@@ -28,6 +30,14 @@ abstract class AbstractAction extends Action
      * @var Registry
      */
     protected $registry;
+    /**
+     * @var SortOrderBuilder
+     */
+    protected $sortOrderBuilder;
+    /**
+     * @var FilterBuilder
+     */
+    protected $filterBuilder;
 
 
     /**
@@ -35,6 +45,8 @@ abstract class AbstractAction extends Action
      * @param Context $context
      * @param SellerRepository $sellerRepository
      * @param SearchCriteriaBuilder $searchCriteriaBuilder
+     * @param SortOrderBuilder $sortOrderBuilder
+     * @param FilterBuilder $filterBuilder
      * @param PageFactory $resultPageFactory
      * @param Registry $registry
      */
@@ -42,6 +54,8 @@ abstract class AbstractAction extends Action
         Context               $context,
         SellerRepository      $sellerRepository,
         SearchCriteriaBuilder $searchCriteriaBuilder,
+        SortOrderBuilder      $sortOrderBuilder,
+        FilterBuilder         $filterBuilder,
         PageFactory           $resultPageFactory,
         Registry              $registry
     ) {
@@ -51,5 +65,7 @@ abstract class AbstractAction extends Action
         $this->searchCriteriaBuilder = $searchCriteriaBuilder;
         $this->resultPageFactory     = $resultPageFactory;
         $this->registry = $registry;
+        $this->sortOrderBuilder = $sortOrderBuilder;
+        $this->filterBuilder = $filterBuilder;
     }
 }
