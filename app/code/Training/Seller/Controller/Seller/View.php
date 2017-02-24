@@ -9,7 +9,7 @@ class View extends AbstractAction
     /**
      * Execute the action
      *
-     * @return void
+     * @return \Magento\Framework\View\Result\Page|null
      */
     public function execute()
     {
@@ -28,10 +28,14 @@ class View extends AbstractAction
             return null;
         }
 
-        echo '<h1>'.$seller->getName().'</h1>';
-        echo '<hr />';
-        echo '<p>#'.$seller->getIdentifier().'</p>';
-        echo '<hr />';
-        echo '<a href="/sellers.html">back to the list</a>';
+        $this->registry->register('current_seller', $seller);
+
+        // Display the page using layout
+        $resultPage = $this->resultPageFactory->create();
+
+        // Page name is written by controller, not by blocks because they are many
+        $resultPage->getConfig()->getTitle()->set(__('Seller "%1"', $seller->getName()));
+
+        return $resultPage;
     }
 }
