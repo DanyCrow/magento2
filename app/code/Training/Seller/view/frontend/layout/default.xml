@@ -31,17 +31,5 @@
                 </arguments>
             </block>
         </referenceContainer>
-        <referenceContainer name="content.top">
-            <block
-                    class="Magento\Framework\View\Element\Template"
-                    name="training.seller.content.top"
-                    template="Training_Seller::header.phtml"
-            >
-                <arguments>
-                    <argument name="background_color" xsi:type="string">#FFDDDD</argument>
-                    <argument name="border_color" xsi:type="string">#DDAAAA</argument>
-                </arguments>
-            </block>
-        </referenceContainer>
     </body>
 </page>

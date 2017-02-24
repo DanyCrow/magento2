@@ -8,6 +8,9 @@
         <title>List of Sellers</title>
     </head>
     <body>
+
+        <referenceContainer name="content.top" remove="true"></referenceContainer>
+
         <referenceContainer name="content">
             <block
                 class="Training\Seller\Block\Seller\View"
