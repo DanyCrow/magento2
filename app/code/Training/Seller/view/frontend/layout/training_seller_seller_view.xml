@@ -4,6 +4,9 @@
     layout="1column"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
 >
+    <head>
+        <title>List of Sellers</title>
+    </head>
     <body>
         <referenceContainer name="content">
             <block
